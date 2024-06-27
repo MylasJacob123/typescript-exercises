@@ -14,27 +14,15 @@ console.log(fixedNum);
 
 
 
-function isStudent(name: string, inClass: boolean ){
-   name ='Lebo';
-   inClass = true;
-    if(inClass){
-       console.log(name.toUpperCase())
+function transformStringz(input: string, toUpperCase: boolean = true ){
+    if(toUpperCase){
+       return input.toUpperCase();
     }
     else{
-     console.log(name.toLowerCase())
+     return input.toLowerCase();
     }
-    return
+    
 }
 
-// function transformString(text: string, toUpperCase?: boolean): string {
-//     if (toUpperCase) {
-//         return text.toUpperCase();
-//     } else {
-//         return text.toLowerCase();
-//     }
-// }
-
-// // Example usage:
-// console.log(transformString("Hello World", true));  // Output: "HELLO WORLD"
-// console.log(transformString("Hello World", false)); // Output: "hello world"
-// console.log(transformString("Hello World"));        // Output: "hello world" (default case)
+console.log(transformStringz("Jacob",true));
+console.log(transformStringz("Jacob",false));

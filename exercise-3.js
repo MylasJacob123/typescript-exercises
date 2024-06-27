@@ -3,22 +3,20 @@ function addNum(a, b) {
 }
  console.log(addNum(1,4))
 
-num = 4.234545;
-fixedNum = parseFloat(num.toFixed()); // Convert the string back to a number
 
+
+num = 4.234545;
+fixedNum = parseFloat(num.toFixed());
 console.log(fixedNum);
 
-function isStudentin(name, inClass ){
-    name ='Lebo';
-    inClass = true;
-     if(inClass){
-        console.log(name.toUpperCase())
-     }
-     else{
-      console.log(name.toLowerCase())
-     }
-     return
- }
- 
- console.log(isStudentin())
 
+
+function transformString(input, toUpperCase = true) {
+    if (toUpperCase) {
+        return input.toUpperCase();
+    } else {
+        return input.toLowerCase();
+    }
+}
+console.log(transformString("Jacob",true));
+console.log(transformString("Jacob",false));

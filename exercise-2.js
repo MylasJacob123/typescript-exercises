@@ -4,11 +4,11 @@ car = "Most cars are comfortable";
 car = true;
 function printValue(value) {
     if (typeof value === "string") {
-        console.log("Hello, ".concat(value, "!"));
+        console.log("".concat(value, "!"));
     }
     else {
-        console.log("The value is ".concat(value, "."));
+        console.log("".concat(value, "."));
     }
 }
-printValue("Hello");
-printValue(false);
+printValue("Most cars are comfortable");
+printValue(true);

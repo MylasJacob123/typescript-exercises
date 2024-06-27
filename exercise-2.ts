@@ -7,11 +7,11 @@ car = true;
 
 function valuePrint(value: StringOrBoolean): void {
     if (typeof value === "string") {
-        console.log(`Hello, ${value}!`);
+        console.log(" ${value}");
     } else {
-        console.log(`The value is ${value}.`);
+        console.log(" ${value}");
     }
 }
 
-valuePrint("Hello");
-valuePrint(false);
+valuePrint("Most cars are comfortable");
+valuePrint(true);
